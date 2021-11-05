@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Owl Carousel CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <title>Nicholas Yuschak|UI Design and Development</title>
+  </head>
+  <body>
+    <!--Back to top-->
+    <i onclick="topFunction()" id="myBtn" class="far fa-caret-square-up"></i>
+    <!---->
+    <!--Custom Cursor-->
+    <div class="cursor"></div>
+    <!---->
+    <!--Body Container-->
+    <div class="hero-container">
+      <!--Logo-->
+      <div class="logo">
+        <h3>NMY</h3>
+        <h6>Modern Dev and Design</h6>
+      </div>
+      <!--Nav-->
+      <nav>
+        <ul>
+          <li>
+            <div class="dropdown">
+              Projects
+              <div class="dropdown-content">
+                <a href="#projects"
+                  >Websites<i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#p5"
+                  >Programming with p5.js<i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#UI-UX"
+                  >UI/UX Design<i class="fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/nicholas-yuschak-6a8b1421b/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nicholasmyuschak">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+        <!--Projects Dropdown-->
+      </nav>
+
+      <div class="hero-heading">
+        <h1>Nicholas M. Yuschak</h1>
+        <h2>User Interface Designer and Developer</h2>
+        <p>
+          I design and build modern, engaging experiences with cutting edge web
+          technologies
+        </p>
+      </div>
+      <!--Hero Image-->
+      <div class="hero-image">
+        <img src="images/me-cropped.jpg" alt="picture of me" />
+      </div>
+
+      <!--End Hero Container-->
+    </div>
+
+    <div id="projects" class="sites-container">
+      <!--Heading-->
+      <div
+        class="sites-heading"
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <h3>DEV/DESIGN</h3>
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <!--Suzanne-->
+      <div
+        class="suzanne-img"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <img
+          src="images/suzanne.png"
+          alt="Suzanne Site"
+          style="border-radius: 5px 5px"
+        />
+      </div>
+      <div
+        class="suzanne-description"
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <h3>Suzanne Collins Site</h3>
+        <p>
+          SMAD 404, Advanced Interactive Design, is one of the two capstone
+          classes at JMU for Interactive Design Concentrators. The course is
+          designed to be a culmination of all the skills students have learned
+          as designers and developers.
+        </p>
+        <br />
+        <p>
+          For this project I was tasked with redesigning and deploying the
+          website for Hunger Games Author:
+          <strong>Suzanne Collins</strong> within 3 Sprints. Find out more about
+          the project below.
+        </p>
+        <button id="btn-1">Learn More</button>
+        <button id="btn-2">
+          <a
+            href="https://nicholasmyuschak.github.io/smad-404-case-competition-final/"
+            >View Site</a
+          >
+        </button>
+      </div>
+      <!-------
+      -->
+      <!--Suzanne Off Canvas-->
+
+      <div id="sc-off-canvas" class="off-canvas-hide">
+        <!--Popovover HEADING-->
+        <div class="off-canvas-top">
+          <h3>Suzanne Collins | Case Competition Site</h3>
+        </div>
+        <!--Popover IMAGE-->
+        <div class="off-canvas-img">
+          <img src="images-2/suzanne-imac.png" alt="Suzanne Mac" />
+        </div>
+        <!--Project DESCRIPTION-->
+        <div class="off-canvas-p-scope">
+          <div class="project-title">
+            <h3>Project Scope</h3>
+          </div>
+          <br />
+          <p>
+            This redesign was a friendly competition between my colleagues and
+            myself to come up with the best design and prototype for
+            suzannecollinsbooks.com. When it was pitched, the main guidelines
+            from the client was that Collins wanted the site to closer match the
+            aesthetic of The Hunger Games Movies, a request for updated
+            navigation, a better way to display her works and a way to purchase
+            those works. The competition was structured using the Agile project
+            management methodology, very common in web development. In Sprint 1
+            I conducted Diagnostic Usability testing with 5 participants. I
+            wanted my design to be directly inspired by users’ pain points and
+            frustrations. Unfortunately, on this site… there were a few. After
+            gathering data from my participants I was able to consolidate a list
+            of features I’d implement to make the site more user-friendly:
+          </p>
+        </div>
+        <!--Project BEFORE-->
+        <div class="before">
+          <div class="before-title">
+            <h3>The Site Before:</h3>
+            <p>(I made this moodboard initially to get my bearings...yikes)</p>
+          </div>
+          <div class="responsive">
+            <iframe
+              style="width: 100%"
+              class="resp-iframe"
+              src="https://xd.adobe.com/embed/62061f8f-a71d-4254-b9e3-5be5c845e17d-3755/"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <!--Jumbotron-->
+        <h3 style="grid-column: 1/4; text-align: center; letter-spacing: 1px">
+          Clearly...there was room for improvement.
+        </h3>
+        <!--Pain Points: 3 Columns-->
+        <!--Card 1-->
+        <div class="card card-1">
+          <h3>Pain Point 1</h3>
+          <br />
+          <i class="fas fa-question fa-3x"></i>
+          <p>
+            Confusing navigation and buried pages. The original design had an
+            “all works” page with all of Collins’ books listed out in random
+            order. Then, each subheading for each book took the user to another
+            individual subpage for that work (which I didn’t even realize until
+            I started conducting my research.)
+          </p>
+        </div>
+        <!---->
+        <!--Card 2-->
+        <div class="card card-2">
+          <h3>Pain Point 2</h3>
+          <br />
+          <i class="fas fa-money-check-alt fa-3x"></i>
+          <p>
+            On her current site there was nowhere to buy her works, only a quick
+            links section which brought you to the homepage of Barnes and Noble,
+            not to the page of the book itself. During usability testing, this
+            frustrated participants.
+          </p>
+        </div>
+        <!---->
+        <!--Card 3-->
+        <div class="card card-3">
+          <h3>Pain Point 2</h3>
+          <br />
+          <i class="far fa-frown-open fa-3x"></i>
+          <p>
+            Crowded layout with poor information hierarchy and “paralyzing”
+            amount of text. (One of my participants said: “I’m not reading any
+            of this.”) Collins has good information on her site, but there’s too
+            much. From an excessive amount of testimonials to multi-paragraph
+            descriptions and scattered quotes, it was a UX nightmare.
+          </p>
+        </div>
+        <!--End Cards-->
+        <!--The Redesign-->
+        <div class="redesign">
+          <div class="redesign-title">
+            <h3>The Redesign</h3>
+          </div>
+          <div class="redesign-body">
+            <p>
+              Once I knew what features I’d focus on, I turned my attention to
+              personal research. I had never made an author’s site before, so it
+              was new challenge for me. I needed to see what other successful
+              authors were doing. I paroozed google for about 2 hours, looking
+              at other authors’ sites for inspiration. This was one of the
+              hardest parts of the process for me, but it was also the most
+              useful because it helped me pinpoint what was necessary for
+              authors. I made a few conclusions:
+            </p>
+          </div>
+          <br />
+          <div class="redesign-1">
+            <p>
+              1.) Branding is essential — as an author, you aren’t just selling
+              your works but selling your brand. This is an area where
+              suzannecollinsbooks.com needed desperate help. I made a logo for
+              Collins, picked a color scheme that matched the movies, and made
+              sure there was continuity between these two elements.
+            </p>
+          </div>
+          <br />
+          <div class="redesign-2">
+            <p>
+              2.) Prominent display of works on landing page — this is one of
+              the first things users should see, especially if you have a new
+              work out… you want to prominently display it. I designed a section
+              for her newest work, and put the rest of her works into a
+              multi-item carousel on the landing page.
+            </p>
+          </div>
+          <br />
+          <div class="mockups">
+            <div style="margin-top: 2em" class="mockups-title">
+              <h3>Moodboards</h3>
+            </div>
+            <div style="margin-top: 2em" class="responsive">
+              <iframe
+                style="width: 100%"
+                class="resp-iframe"
+                src="https://xd.adobe.com/embed/c7fab46c-5f5a-4d2c-8ac5-470740723a89-92a9/"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div style="margin-top: 2em" class="final">
+            <div style="margin-top: 2em" class="final-title">
+              <h3>The Final Site</h3>
+            </div>
+            <div class="responsive">
+              <iframe
+                style="width: 100%; margin-top: 2em"
+                class="resp-iframe"
+                src="https://nicholasmyuschak.github.io/smad-404-case-competition-final/"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+
+      <!--End Suzanne-->
+      <!--Beerwerks-->
+      <div
+        class="bw-img"
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <img
+          src="images/beerwerks.png"
+          alt="Beerwerks Site"
+          style="border-radius: 5px 5px"
+        />
+      </div>
+      <div
+        class="bw-description"
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <h3>Beerwerks Site</h3>
+        <p>
+          SMAD 308: Interactive Design II ended with an incredible opportunity
+          to practice inter-disciplinary collaboration. As a developer, I make
+          interfaces for all kinds of audiences and causes. I had the privilege
+          to collaborate with my journalism colleagues on this project. They
+          pitched the idea and story to us, and it was our job to make that
+          story come to life in a User Interface. The cause?
+          <strong
+            >The Resiliance Of Small Business Amid The COVID-19
+            Pandemic.</strong
+          >
+          Their story covered how the Shenandoah Beerwerks Trail encouraged
+          craft beer lovers to continue supporting local breweries as well as
+          the positive sense of community this fostered.
+        </p>
+        <!--<button id="btn-1">Learn More</button>-->
+        <button id="btn-2">
+          <a href="https://nicholasmyuschak.github.io/308-final-beerwerks/"
+            >View Site</a
+          >
+        </button>
+      </div>
+    </div>
+    <!--End Sites Container-->
+
+    <!--p5.js Container-->
+    <div id="p5" class="p5-container">
+      <div class="p5-heading">
+        <h3>INTERACTIVE GRAPHICS PROGRAMMING WITH p5.js</h3>
+        <i class="fas fa-code-branch"></i>
+      </div>
+      <div class="sketch-1">
+        <div class="responsive">
+          <iframe
+            style="width: 100%"
+            class="resp-iframe"
+            src="https://preview.p5js.org/yuschanm/embed/PkmJJYm6L"
+          ></iframe>
+        </div>
+      </div>
+      <div class="sketch-1-description">
+        <h3>ICS Bus Animation</h3>
+        <p>
+          The p5.js library was my first introduction to Javascript, and really
+          helped me fall in love with the language. Like jQUery, p5.js has a
+          library of functions that allow the user to program graphics on the
+          HTML Canvas in a more streamlined manner.
+        </p>
+        <br />
+        <p>
+          This was one of my first sketches in p5 -- my first attempt at
+          animation. This sketch was a study in objects, global variables and
+          boolean statements. It's also illsutrative of two important functions
+          in p5 that can make for really dynamic experiences:
+          <code> mouseX()</code> (dynamically follows the X position of your
+          mouse) and <code> mouseIsPressed() </code>
+        </p>
+        <br />
+        <p>
+          In p5, the draw function loops continuously at framerate the user can
+          control. Therefore, it's continually reading where the mouse is and
+          dynamically assigning a value to the variable that determines the
+          bus's position on the x-axis.
+        </p>
+      </div>
+      <div class="sketch-2">
+        <div class="responsive">
+          <iframe
+            style="width: 100%"
+            class="resp-iframe"
+            src="https://preview.p5js.org/yuschanm/embed/nwjQLKwgZ"
+          ></iframe>
+        </div>
+      </div>
+      <div class="sketch-2-description">
+        <h3>Animated Snoopy Portrait</h3>
+        <p>
+          This sketch was a lot more difficult to implement. The most time
+          consuming part was coding each body part of snoopy one by one! I made
+          this before learning about classes and modular programming using
+          functions. If I were to go back and redo it, I'd execute the code a
+          little differently.
+        </p>
+        <br />
+        <p>
+          Nevertheless, I'm really proud of how it turned out, as I'm a huge fan
+          of snoopy. To accomplish the rain animation in the background I used
+          the p5 <code> random()</code> function to dynamically generate rain
+          drops within constrained coordinates on the canvas.
+        </p>
+      </div>
+    </div>
+    <!--End p5.js Container-->
+    <!--XD Container-->
+    <div id="UI-UX" class="xd-container">
+      <div
+        class="xd-heading"
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="100"
+      >
+        <h3>UI/UX DESIGN</h3>
+        <i class="fas fa-palette"></i>
+      </div>
+      <div class="design-1">
+        <div class="responsive">
+          <iframe
+            class="resp-iframe"
+            width="1920"
+            height="1176"
+            src="https://xd.adobe.com/embed/abed0f56-dfa2-4ff9-8758-40b8afc2b306-febe/"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="design-1-description">
+        <h3>Medium Fidelity Mockup -- Adobe XD</h3>
+        <p>
+          This is a medium fidelity mockup of a landing page I created in Adobe
+          XD. This mockup was for my current capstone project, the redesign and
+          deployment of a Web Application: Story Analyzer. Story Analyzer is an
+          application developed by Dr. Mitri, a JMU CIS Professor, that analyzes
+          complex documents and intelligently generates Data Visualizations
+          using D3 and NLP. The entire project is a collaborative effort to
+          redesign to completely redesign the interface in order to make it more
+          user friendly.
+        </p>
+        <br />
+        <p>
+          This design was created during Sprint 1 of the project after
+          conducting User Research.
+        </p>
+      </div>
+      <!--Design 2-->
+      <div class="design-2">
+        <div class="responsive">
+          <iframe
+            class="resp-iframe"
+            width="1920"
+            height="1176"
+            src="https://xd.adobe.com/embed/3190456f-6786-4b82-870c-c3a596adc343-64c3/"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="design-2-description">
+        <h3>Medium Fidelity Mockup -- Adobe XD</h3>
+        <p>
+          This is another medium fidelity mockup of a products subpage I created
+          in Adobe XD. This mockup was for the Suzanne Collins Website Redesign
+          which you can learn more about above. Though I stuck with this layout
+          in the end, I tweaked a couple things as I was developing and
+          conducting usability testing.
+        </p>
+      </div>
+      <!--Design 3-->
+    </div>
+    <!--End XD Container-->
+
+    <!--Skill Summary Container-->
+    <div class="skills-container">
+      <div class="skills-heading">
+        <h3>SUMMARY OF SKILLS</h3>
+      </div>
+      <div class="skills-carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <i style="font-size: 7rem" class="fab fa-html5"></i>
+          </div>
+          <div class="item">
+            <i style="font-size: 7rem" class="fab fa-css3"></i>
+          </div>
+          <div class="item">
+            <i style="font-size: 7rem" class="fab fa-js-square"></i>
+          </div>
+          <div class="item">
+            <i style="font-size: 7rem" class="fab fa-bootstrap"></i>
+          </div>
+          <div class="item">
+            <img style="width: 12em" src="images/p5js.svg" alt="p5 logo" />
+          </div>
+          <div class="item">
+            <img style="width: 8.5em" src="images/adobe.png" alt="Adobe logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Skill Summary Container-->
+    <div id="about" class="about-container">
+      <div
+        class="about-heading"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="200"
+      >
+        <h3>ABOUT ME</h3>
+        <i class="far fa-user"></i>
+      </div>
+      <div
+        class="about-pic"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="100"
+      >
+        <img src="images/me-and-pups.jpeg" alt="Me and Pups" />
+      </div>
+      <div class="about-description">
+        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+          I’m a User Interface Designer and Front End Developer from Stafford
+          County, VA. I will graduate from James Madison University in December
+          2021 with a B.S. in Media Arts and Design, Interactive Design.
+        </p>
+        <br />
+        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="150">
+          I stumbled upon my passion for design and coding by accident, though
+          I’ve always had a strong love for the arts and music.
+        </p>
+        <br />
+        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+          I spend a lot of my free time learning about industry trends, front
+          end technologies, and design and development. However, I also love to
+          play guitar, piano, read, and write music. I’m the Father of two
+          Golden Retrievers, whom I love dearly.
+        </p>
+        <br />
+        <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="250">
+          In the next year...
+        </h2>
+        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+          I plan to continue expanding my skills as a designer and developer.
+          I'm especially curious about picking up Javascript frameworks such as
+          React, Vue, and Angular. I've begun teaching myself, and have been
+          documenting my progress on LinkedIn.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-heading">
+        <h2>CONTACT ME</h2>
+      </div>
+      <div class="emails">
+        <h4>Email</h4>
+        <p>nmyuschak@gmail.com</p>
+        <p>yuschanm@dukes.jmu.edu</p>
+      </div>
+      <div class="socials">
+        <h4>Socials</h4>
+        <p>
+          <a href="https://www.linkedin.com/in/nicholas-yuschak-6a8b1421b/">
+            Connect with me on LinkedIn <i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p>
+          <a href="https://github.com/nicholasmyuschak">Check out my Github</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--Owl Carousel JS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //owl carousel
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoHeight: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <!--AOS Scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="app.js"></script>
+    <script src="popover.js"></script>
+  </body>
+</html>

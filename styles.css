@@ -1,0 +1,579 @@
+/*--Global Styles--*/
+/*--Import Google Fonts--*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/*----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+.logo h3 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+.logo h6 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+  font-size: var(--sm-subheading);
+}
+i {
+  font-size: 1.3em;
+}
+.logo,
+h1,
+.card h3,
+.project-title,
+.redesign-title,
+.mockups-title,
+.final-title {
+  background: rgb(135, 249, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(135, 249, 255, 1) 45%,
+    rgba(107, 252, 220, 1) 67%,
+    rgba(57, 119, 246, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*--Variables--*/
+:root {
+  --body-font: 1rem;
+  --heading-font: clamp(1.7rem, 4.3vw, 6rem);
+  --h2-font: clamp(1rem, 2vw, 3rem);
+  --subheading-font: 1.625rem;
+  --sm-subheading: 1.35rem;
+}
+
+/*Font Styles -- use rems*/
+h1 {
+  font-weight: 700;
+  font-size: var(--heading-font);
+}
+h2 {
+  font-size: var(--h2-font);
+}
+h3 {
+  font-size: var(--subheading-font);
+}
+p {
+  font-size: var(--body-font);
+  font-weight: 300;
+  line-height: 180%;
+}
+.sites-heading h3,
+.p5-heading h3,
+.xd-heading h3,
+.skills-heading h3,
+.about-heading h3,
+.sc-heading h3 {
+  font-weight: 300;
+  color: #64d2ff;
+  letter-spacing: 5px;
+  border-bottom: solid 1px #f1f1f1;
+}
+.sites-heading,
+.p5-heading,
+.xd-heading,
+.about-heading,
+.sc-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5em;
+}
+.sites-heading i,
+.p5-heading i,
+.xd-heading i,
+.about-heading i {
+  font-size: 3em;
+}
+footer h2 {
+  letter-spacing: 5px;
+}
+footer h4 {
+  color: #64d2ff;
+  letter-spacing: 2px;
+  font-size: var(--subheading-font);
+}
+
+/*--Colors--*/
+.sites-container,
+.xd-container,
+.about-container {
+  background-color: #333;
+}
+
+.p5-container {
+  background-color: #1a1a1a;
+}
+.hero-heading p {
+  color: #bbb;
+}
+
+/*--Spacing--use vw or ems--*/
+.sites-container {
+  margin-top: 9em;
+}
+
+.suzanne-description h3 {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+/*--Layout-Grid-Flex-Float-*/
+/*--Home--*/
+.hero-container,
+.sites-container,
+.p5-container,
+.xd-container,
+.skills-container,
+.about-container,
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2em;
+  grid-template-rows: auto;
+  padding: 4vw;
+}
+
+/*dropdown*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1rem;
+}
+.dropdown-content a i {
+  display: none;
+  font-size: 0.9em;
+  margin: 0.3em;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #111;
+}
+.dropdown-content a:hover i {
+  display: inline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*--Mobile Layout--*/
+/*--Home--*/
+.logo,
+nav,
+.hero-heading,
+.hero-image,
+.sites-heading,
+.suzanne-img,
+.suzanne-description,
+.bw-img,
+.bw-description,
+.p5-heading,
+.sketch-1,
+.sketch-1-description,
+.sketch-2,
+.sketch-2-description,
+.sketch-3,
+.xd-heading,
+.design-1,
+.design-1-description,
+.design-2,
+.design-2-description,
+.skills-heading,
+.skills-carousel,
+.about-heading,
+.about-pic,
+.about-description,
+.footer-heading,
+.emails,
+.socials {
+  grid-column: 1/13;
+}
+
+/*SC*/
+.sc-heading {
+  grid-column: 1/13;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8vw;
+  align-items: center;
+}
+nav {
+  grid-row: 4;
+  padding: 0.5em;
+}
+
+/*--Desktop Layout--*/
+/*--Home--*/
+@media (min-width: 768px) {
+  .logo {
+    margin-top: -0.2em;
+    grid-column: 2/12;
+    grid-row: 1;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-column: 6/13;
+    grid-row: 1;
+  }
+  .hero-container {
+    min-height: 90vh;
+  }
+  .hero-image {
+    grid-column: 2/6;
+    grid-row: 2;
+  }
+  .hero-heading {
+    grid-column: 6/13;
+    grid-row: 2;
+    margin-top: 5%;
+  }
+  .hero-heading p {
+    margin-top: 10%;
+    font-size: var(--subheading-font);
+    max-width: 75%;
+  }
+
+  .sites-heading {
+    grid-column: 2/5;
+  }
+
+  .suzanne-img {
+    grid-column: 2/6;
+  }
+  .suzanne-description {
+    grid-column: 6/13;
+    max-width: 80%;
+  }
+  .bw-img {
+    grid-column: 2/6;
+  }
+  .bw-description {
+    grid-column: 6/13;
+    max-width: 80%;
+  }
+
+  .p5-heading {
+    grid-column: 2/12;
+  }
+  .sketch-1 {
+    grid-column: 2/7;
+  }
+  .sketch-1-description {
+    grid-column: 7/12;
+  }
+  .sketch-2 {
+    grid-column: 2/7;
+  }
+  .sketch-2-description {
+    grid-column: 7/12;
+  }
+  .xd-heading {
+    grid-column: 2/12;
+  }
+  .design-1 {
+    grid-column: 2/7;
+  }
+
+  .design-1-description {
+    grid-column: 7/12;
+  }
+  .design-2 {
+    grid-column: 2/7;
+  }
+
+  .design-2-description {
+    grid-column: 7/12;
+  }
+
+  .skills-heading {
+    grid-column: 2/7;
+  }
+  .skills-carousel {
+    grid-column: 2/12;
+  }
+  .about-heading {
+    grid-column: 2/12;
+  }
+  .about-pic {
+    grid-column: 2/5;
+  }
+  .about-description {
+    grid-column: 5/12;
+  }
+  .footer-heading {
+    grid-column: 2/12;
+  }
+  .emails {
+    grid-column: 2/7;
+  }
+  .socials {
+    grid-column: 7/12;
+  }
+}
+
+/*Components*/
+button {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  border-radius: 10px 10px;
+  border: solid 1px #64d2ff;
+}
+#btn-1 {
+  background-color: inherit;
+  color: white;
+}
+#btn-1:hover {
+  color: #64d2ff;
+}
+#btn-2 {
+  background-color: #64d2ff;
+}
+#btn-2 :hover {
+  color: white;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Back To Top*/
+#myBtn {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/*Cursor*/
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+.off-canvas-hide {
+  display: none;
+}
+.off-canvas-show {
+  height: 90%;
+  width: 100%;
+  grid-column: 1/12;
+  grid-gap: 5em;
+  background-color: #1a1a1a;
+  padding: inherit;
+  color: #f5f5f5;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7em;
+}
+
+.off-canvas-top,
+.off-canvas-img,
+.off-canvas-p-scope,
+.before {
+  grid-column: 1/4;
+}
+.off-canvas-img,
+.off-canvas-p-scope {
+  padding: 2vw;
+}
+.redesign,
+.mockups,
+.final {
+  grid-column: 1/4;
+}
+
+.redesign-body {
+  margin-top: 1em;
+}
+.redesign-title,
+.project-title,
+.before-title,
+.mockups-title,
+.final-title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  border-radius: 15px 15px;
+}
+/*-------Cards-----*/
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card {
+  background-color: #222;
+  padding: 4em;
+  border-radius: 15px 15px;
+  text-align: center;
+}
+.card h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.card i {
+  padding: 1em;
+}
+.card-1,
+.card-2,
+.card-3 {
+  grid-column: 1/4;
+}
+/*-------Cards-----*/
+@media (min-width: 768px) {
+  /*#sc-off-canvas {
+    padding: 5vw;
+  }*/
+  .card-1 {
+    grid-column: 1/2;
+  }
+  .card-2 {
+    grid-column: 2/3;
+  }
+  .card-3 {
+    grid-column: 3/4;
+  }
+}
+
+/*----------*/
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid #64d2ff;
+}
+/*End Custom Cursor*/
+/*iframe embed styles*/
+.responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*SC Desktop*/
+/*@media (min-width: 768px) {
+}*/
+.nav-link {
+  color: white;
+}
+.nav {
+  background-color: #000 !important;
+}
+
+li a:hover,
+p a:hover {
+  color: #64d2ff !important;
+}
