@@ -51,37 +51,76 @@
         <h3>NMY</h3>
         <h6>Modern Dev and Design</h6>
       </div>
-      <!--Nav-->
+
+      <!--Mobile Nav-->
+      <div class="mobile-nav">
+        <div id="burger-icon" class="burger">
+          <i class="fas fa-grip-lines"></i>
+          <p style="text-align: center">Menu</p>
+        </div>
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu-items">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#about">About</a></div>
+            <div>
+              <a href="https://www.linkedin.com/in/nicholas-yuschak-6a8b1421b/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/nicholasmyuschak">
+                <i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+
+      <!--Desktop Nav-->
+      <!--Has display:none in mobile view-->
       <nav>
         <ul>
-          <li>
-            <div class="dropdown">
-              Projects
-              <div class="dropdown-content">
-                <a href="#projects"
-                  >Websites<i class="fas fa-angle-right"></i
-                ></a>
-                <a href="#p5"
-                  >Programming with p5.js<i class="fas fa-angle-right"></i
-                ></a>
-                <a href="#UI-UX"
-                  >UI/UX Design<i class="fas fa-angle-right"></i
-                ></a>
+          <div class="self">
+            <li>
+              <div class="dropdown">
+                Projects
+                <div class="dropdown-content">
+                  <a href="#projects"
+                    >Websites<i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#p5"
+                    >Programming with p5.js<i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#UI-UX"
+                    >UI/UX Design<i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+          </div>
+          <div class="self">
+            <li><a href="#about">About</a></li>
+          </div>
 
-          <li><a href="#about">About</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/nicholas-yuschak-6a8b1421b/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/nicholasmyuschak">
-              <i class="fab fa-github"></i
-            ></a>
-          </li>
+          <div class="self">
+            <li>
+              <a href="https://www.linkedin.com/in/nicholas-yuschak-6a8b1421b/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </div>
+
+          <div class="self">
+            <li>
+              <a href="https://github.com/nicholasmyuschak">
+                <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </div>
         </ul>
         <!--Projects Dropdown-->
       </nav>
@@ -98,6 +137,17 @@
       <div class="hero-image">
         <img src="images/me-cropped.jpg" alt="picture of me" />
       </div>
+
+      <button id="hero-btn">
+        <div>
+          <a href="#projects">
+            <p>DISCOVER MY WORK</p>
+          </a>
+        </div>
+        <div>
+          <i class="fas fa-angle-down fa-2x"></i>
+        </div>
+      </button>
 
       <!--End Hero Container-->
     </div>
@@ -160,12 +210,10 @@
 
       <div id="sc-off-canvas" class="off-canvas-hide">
         <!--Popovover HEADING-->
-        <div class="off-canvas-top">
-          <h3>Suzanne Collins | Case Competition Site</h3>
-        </div>
+
         <!--Popover IMAGE-->
         <div class="off-canvas-img">
-          <img src="images-2/suzanne-imac.png" alt="Suzanne Mac" />
+          <img src="images-2/suzanne-imac-bq.png" alt="Suzanne Mac" />
         </div>
         <!--Project DESCRIPTION-->
         <div class="off-canvas-p-scope">
@@ -192,8 +240,10 @@
         <!--Project BEFORE-->
         <div class="before">
           <div class="before-title">
-            <h3>The Site Before:</h3>
-            <p>(I made this moodboard initially to get my bearings...yikes)</p>
+            <p>
+              (I first made a moodboard to get an understanding of the current
+              site)
+            </p>
           </div>
           <div class="responsive">
             <iframe
@@ -206,10 +256,9 @@
           </div>
         </div>
         <!--Jumbotron-->
-        <h3 style="grid-column: 1/4; text-align: center; letter-spacing: 1px">
-          Clearly...there was room for improvement.
-        </h3>
+
         <!--Pain Points: 3 Columns-->
+
         <!--Card 1-->
         <div class="card card-1">
           <h3>Pain Point 1</h3>
@@ -250,6 +299,7 @@
             descriptions and scattered quotes, it was a UX nightmare.
           </p>
         </div>
+
         <!--End Cards-->
         <!--The Redesign-->
         <div class="redesign">
@@ -452,7 +502,7 @@
             class="resp-iframe"
             width="1920"
             height="1176"
-            src="https://xd.adobe.com/embed/abed0f56-dfa2-4ff9-8758-40b8afc2b306-febe/"
+            src="https://xd.adobe.com/embed/1b6dc014-766b-403c-8020-31fae7575e30-4e3e/"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -638,5 +688,7 @@
 
     <script src="app.js"></script>
     <script src="popover.js"></script>
+    <script src="hamburger.js"></script>
   </body>
 </html>
+
